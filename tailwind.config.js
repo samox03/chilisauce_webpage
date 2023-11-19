@@ -9,7 +9,8 @@ export default {
       colors: {
         "gray-20": "#f9f8f7",
         "gray-50": "#EFE6E6",
-        "gray-100": "#DFCCCC",
+       // "gray-100": "#DFCCCC",
+        "gray-100": "#db4442",
        // "gray-500": "#5E0000",
         "gray-500": "#d62725",  
         "primary-100": "#FFE1E0",
