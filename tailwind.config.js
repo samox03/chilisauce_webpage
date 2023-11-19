@@ -41,6 +41,9 @@ export default {
       sm: "768px",
       md: "1060px",
     },
+    boxShadow: {
+      '3xl': '0 1px 0 1px  #db4442'
+    }
   },
   plugins: [],
 }
