@@ -101,7 +101,7 @@ const Home = ({ setSelectedPage }: Props) => {
                                     </p>
                                 </div>
                                 <div>
-                                    <p className="text-base md:text-lg">
+                                    <p className="text-base md:text-lg font-sans">
                                         Ich bin vermutlich die fruchtigste & leckerste Chili Sauce der Welt. Ehrlich.
                                     </p>
                                 </div>

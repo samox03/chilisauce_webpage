@@ -2,6 +2,9 @@ import { SelectedPage } from "@/shared/types"
 import { motion } from "framer-motion";
 
 import Product1_Wrapper from "@/assets/Product1_Wrapper.png";
+import Product2_Wrapper from "@/assets/Product2Wrapper.png";
+import Product3_Wrapper from "@/assets/Product3Wrapper.png";
+
 import BG_redwave from "@/assets/BG_redwavey.png";
 
 type Props = {
@@ -26,8 +29,8 @@ const Product = ({ setSelectedPage }: Props) => {
                
                     <div className="items-center justify-center md:flex gap-10" >
                         <img alt="Product1" src={Product1_Wrapper} />
-                        <img alt="Product1" src={Product1_Wrapper} />
-                        <img alt="Product1" src={Product1_Wrapper} />
+                        <img alt="Product2" src={Product2_Wrapper} />
+                        <img alt="Product3" src={Product3_Wrapper} />
                     </div>
             
             </motion.div>

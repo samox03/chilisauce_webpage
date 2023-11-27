@@ -10,6 +10,11 @@ body,
 .app {
     height: 100%;
     width: 100%;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Gutter", "DM Sans", sans-serif;
     @apply text-gray-500
 }
+
+@font-face {
+    font-family: Gutter;
+    src:  url('./assets/font/gutter/GutterRust.ttf');
+    }

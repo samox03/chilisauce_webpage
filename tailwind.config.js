@@ -28,6 +28,7 @@ export default {
       fontFamily: {
         dmsans: ["DM Sans", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
+        text: ["Gutter"]
       },
       content: {
         evolvetext: "url('./assets/bubble_handmade.png')",
