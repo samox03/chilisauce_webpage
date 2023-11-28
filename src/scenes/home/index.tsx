@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import HomePageTitle_Logo from "@/assets/homepagetitle_logo.png";
 import LogoText_mainImg from "@/assets/logotitle_mainpage.png";
 import BG_redWave from "@/assets/BG_redwavey.png";
+import cut_redWave from "@/assets/cut_redwavey.png";
 import Bubble_hotnfruity from "@/assets/bubble_hotNfruity.png";
 import Bubble_NK from "@/assets/bubble_BerlinNK.png";
 import Bubble_vegan from "@/assets/bubble_vegan.png";
@@ -82,7 +83,8 @@ const Home = ({ setSelectedPage }: Props) => {
 
                         </div>
                     </motion.div>
-
+                    
+                    <img alt="backgroundElement" src={cut_redWave} className="-mt-28"/>
 
                     <div className=" bg-gray-500">
                         <div className="flex-col gap-y-22">
