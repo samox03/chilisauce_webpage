@@ -15,10 +15,11 @@ const Product = ({ setSelectedPage }: Props) => {
     return (
         <section
             id="product"
-            className="mx-auto min-h-full w-5/6 py-20"
+            className="mx-auto min-h-full bg-gray-500"
+            // className="mx-auto min-h-full w-5/6 py-20  bg-red-500"
         >
             <motion.div
-                className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
+                className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6 "
                 onViewportEnter={() => setSelectedPage(SelectedPage.Product)}
             >
                 {/* BackgroundIMG*/}
@@ -27,10 +28,10 @@ const Product = ({ setSelectedPage }: Props) => {
                 </div> */}
                 {/* ProductWrapper*/}
                
-                    <div className="items-center justify-center md:flex gap-10" >
-                        <img alt="Product1" src={Product1_Wrapper} />
-                        <img alt="Product2" src={Product2_Wrapper} />
-                        <img alt="Product3" src={Product3_Wrapper} />
+                    <div className="items-center justify-center md:flex gap-20 " >
+                        <img alt="Product1" src={Product1_Wrapper} className="pt-10"/>
+                        <img alt="Product2" src={Product2_Wrapper} className="pt-10"/>
+                        <img alt="Product3" src={Product3_Wrapper} className="pt-10"/>
                     </div>
             
             </motion.div>
