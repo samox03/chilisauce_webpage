@@ -14,7 +14,7 @@ type Props = {
 const Product = ({ setSelectedPage }: Props) => {
     return (
         <section
-            id="product"
+            id="wasbinich"
             className="mx-auto min-h-full bg-gray-500"
             // className="mx-auto min-h-full w-5/6 py-20  bg-gray-500"
         >

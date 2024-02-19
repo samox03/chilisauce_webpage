@@ -9,7 +9,8 @@ import Team from "./scenes/team";
 
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Product)
+  const [selectedPage, setSelectedPage] = useState<SelectedPage>(
+    SelectedPage.Product)
 
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
 
@@ -18,7 +19,7 @@ function App() {
       if (window.scrollY === 0) {
         setIsTopOfPage(true);
         //TODO: eventually change .product to .home
-        setSelectedPage(SelectedPage.Product);
+        setSelectedPage(SelectedPage.Home);
       }
       if (window.screenY !== 0) setIsTopOfPage(false);
     }

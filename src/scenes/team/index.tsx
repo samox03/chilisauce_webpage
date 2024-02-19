@@ -15,7 +15,8 @@ const Team = ({ setSelectedPage }: Props) => {
 
 
     return (
-        <section>
+        <section
+        id="werstecktdahinter">
             <div className="md:flex justify-content items-center">
                 <div className="flex-1 p-20">
                     <img alt="picture of the team" src={teampic} />
