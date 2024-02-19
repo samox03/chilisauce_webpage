@@ -28,7 +28,7 @@ const Home = ({ setSelectedPage }: Props) => {
 
 
     return (
-        <section id="home" className=" gap-y-16 bg-gray-20 md:h-full md:pb-0 md:pt-32">
+        <section id="home" className=" gap-y-16 bg-gray-20 md:h-full md:pb-0 md:mt-40 ">
             {/* IMAGE AND MAIN HEADER */}
             <motion.div
                 // className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
@@ -37,7 +37,7 @@ const Home = ({ setSelectedPage }: Props) => {
                 onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
             >
                 {/* TODO: Eventuell md:h-5/6 wieder rausnehmen */}
-                <div className="md:flex-col items-center justify-center w-full">
+                <div className="md:flex-col items-center justify-center w-full  bg-gray-20">
                 {/* <div className="md:flex-col mx-auto w-11/12 items-center justify-center"> */}
                     {/* MAIN HEADER */}
 
@@ -54,7 +54,7 @@ const Home = ({ setSelectedPage }: Props) => {
                     >
                         <div className="z-10 mt-28">
                             {/* HEADINGS */}
-                            <div className="md:flex mx-auto w-11/12 items-center justify-center space-x- ">
+                            <div className="md:flex mx-auto w-11/12 items-center justify-center space-x- md:pt-28">
 
                                 {/* Speechbubbles */}
                                 {/* This element is hidden on small screens. */}
@@ -84,8 +84,9 @@ const Home = ({ setSelectedPage }: Props) => {
                         </div>
                     </motion.div>
                     
-                    <img alt="backgroundElement" src={cut_redWave} className="-mt-28"/>
-
+                    
+                    <img alt="backgroundElement" src={cut_redWave} className="-mt-28 w-full"/>
+                   
                     <div className=" bg-gray-500">
                         <div className="flex-col gap-y-22">
                             {/* <div className="bg-red-wave bg-cover h-[600px] bg-center -z-50 -mt-20"></div> */}

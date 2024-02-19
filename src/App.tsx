@@ -4,6 +4,7 @@ import Product from "@/scenes/product";
 
 import { useEffect, useState } from "react";
 import { SelectedPage } from "@/shared/types";
+import Team from "./scenes/team";
 
 
 
@@ -34,6 +35,7 @@ function App() {
       />
         <Home setSelectedPage={setSelectedPage} />
         <Product setSelectedPage={setSelectedPage} />
+        <Team setSelectedPage={setSelectedPage} />
     </div>
   );
 }
