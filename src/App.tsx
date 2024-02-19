@@ -1,10 +1,13 @@
 import Navbar from "@/scenes/navbar";
 import Home from "@/scenes/home";
 import Product from "@/scenes/product";
+import Team from "./scenes/team";
+import Shopping from "./scenes/shopping";
 
 import { useEffect, useState } from "react";
 import { SelectedPage } from "@/shared/types";
-import Team from "./scenes/team";
+
+
 
 
 
@@ -18,7 +21,6 @@ function App() {
     const handleScroll = () => {
       if (window.scrollY === 0) {
         setIsTopOfPage(true);
-        //TODO: eventually change .product to .home
         setSelectedPage(SelectedPage.Home);
       }
       if (window.screenY !== 0) setIsTopOfPage(false);
@@ -37,6 +39,7 @@ function App() {
         <Home setSelectedPage={setSelectedPage} />
         <Product setSelectedPage={setSelectedPage} />
         <Team setSelectedPage={setSelectedPage} />
+        <Shopping setSelectedPage={setSelectedPage} />
     </div>
   );
 }
