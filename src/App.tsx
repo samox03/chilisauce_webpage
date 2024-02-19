@@ -3,6 +3,8 @@ import Home from "@/scenes/home";
 import Product from "@/scenes/product";
 import Team from "./scenes/team";
 import Shopping from "./scenes/shopping";
+import Footer from "./scenes/footer";
+
 
 import { useEffect, useState } from "react";
 import { SelectedPage } from "@/shared/types";
@@ -40,6 +42,8 @@ function App() {
         <Product setSelectedPage={setSelectedPage} />
         <Team setSelectedPage={setSelectedPage} />
         <Shopping setSelectedPage={setSelectedPage} />
+        <Footer setSelectedPage={setSelectedPage} />
+
     </div>
   );
 }
