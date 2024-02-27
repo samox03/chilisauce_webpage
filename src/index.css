@@ -18,3 +18,10 @@ body,
     font-family: Gutter;
     src:  url('./assets/font/gutter/GutterRust.ttf');
     }
+
+.footer-background {
+    background-image: url('./assets/BG_half_redwavey.png');
+    background-size: cover;
+    padding: 0px;
+    height: 100px;
+}
