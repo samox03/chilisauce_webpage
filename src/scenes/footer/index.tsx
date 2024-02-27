@@ -10,7 +10,7 @@ const Footer = ({ setSelectedPage }: Props) => {
 
   return (
     <div>
-        <img alt="red background wave" src={BG_half_redwavey}/>
+        <img alt="red background wave" src={BG_half_redwavey} className="w-full"/>
     </div>
   )
 }

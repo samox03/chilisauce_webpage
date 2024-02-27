@@ -24,7 +24,7 @@ const Shopping = ({ setSelectedPage }: Props) => {
 
             {/* TODO: Insert Table, Insert Shoppify link, Insert 
 */}
-            <img alt="wave_white_background" src={BG_graphicLine} />
+            <img alt="wave_white_background" src={BG_graphicLine} className="w-full md:-mt-28 "/>
 
             <div className="md:flex justify-content items-center">
                 <div className="flex-1 p-40 flex-col">
@@ -39,36 +39,36 @@ const Shopping = ({ setSelectedPage }: Props) => {
             </div>
             <div className="flex flex-col items-center">
                 <div >
-                    <h2>Im Laden</h2>
+                    <h2 className="pl-2 pb-4">Im Laden</h2>
                     <table className="font-sans table-auto">
                         <tbody>
-                            <tr>
-                                <td>Pfefferhaus, Kreuzberg</td>
-                                <td>Herrfurthstr 324, 12047 Berlin</td>
+                            <tr >
+                                <td className="p-2">Pfefferhaus, Kreuzberg</td>
+                                <td className="pl-4">Herrfurthstr 324, 12047 Berlin</td>
                             </tr>
                             <tr>
-                                <td>Edeka Hermann</td>
-                                <td>Herrfurthstr 324, 12047 Berlin</td>
+                                <td className="p-2">Edeka Hermann</td>
+                                <td className="pl-4">Herrfurthstr 324, 12047 Berlin</td>
                             </tr>
                             <tr>
-                                <td>Späti zu Späti</td>
-                                <td>Herrfurthstr 324, 12047 Berlin</td>
+                                <td className="p-2">Späti zu Späti</td>
+                                <td className="pl-4">Herrfurthstr 324, 12047 Berlin</td>
                             </tr>
                             <tr>
-                                <td>Chililaden</td>
-                                <td>Herrfurthstr 324, 12047 Berlin</td>
+                                <td className="p-2">Chililaden</td>
+                                <td className="pl-4">Herrfurthstr 324, 12047 Berlin</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+                
                 <div>
-
                     <div className="md:flex justify-content items-center">
                         <div>
                             <img alt="logo" src={chillis_graphic} />
                         </div>
                         <div>
-                            <p>Online</p>
+                            <p className="pl-4 pb-4">Online</p>
                             <p className="font-sans">Klick hier um bequem & online an deine köstliche Portion Paya Chili Sauce zu kommen!
                             </p>
                         </div>
