@@ -23,5 +23,5 @@ body,
     background-image: url('./assets/BG_half_redwavey.png');
     background-size: cover;
     padding: 0px;
-    height: 100px;
+    height: fit-content;
 }

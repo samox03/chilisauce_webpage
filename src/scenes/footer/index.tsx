@@ -16,13 +16,14 @@ const Footer = ({ selectedPage, setSelectedPage }: Props) => {
   return (
     <div className="footer-background">
       {/* <img alt="red background wave" src={BG_half_redwavey} className="w-full" /> */}
-      <div className="justify-content mx-auto w-5/6 gap-16 md:flex">
-        <div className={`${flexBetween} gap-8 flex-col`}>
+      <div className="justify-content mx-auto w-5/6 md:flex-col">
+        <div className={`${flexBetween} gap-5 flex-col`}>
           <ContactBtnLight setSelectedPage={setSelectedPage}>Schreib mir</ContactBtnLight>
           <InstaBtnLight setSelectedPage={setSelectedPage}>Folg mir auf Insta</InstaBtnLight>
         </div>
       </div>
-      <div className={`${flexBetween} gap-8 text-sm mr-8 text-white `}>
+      <div className={`${flexBetween} text-sm mx-20 text-white font-sans`}>
+        <div></div>
         <Link
           page="Was bin ich"
           selectedPage={selectedPage}
@@ -31,12 +32,14 @@ const Footer = ({ selectedPage, setSelectedPage }: Props) => {
         <Link
           page="Wer steckt dahinter"
           selectedPage={selectedPage}
-          setSelectedPage={setSelectedPage} />
+          setSelectedPage={setSelectedPage}
+          />
         <Link
           page="Wo gibts mich"
           selectedPage={selectedPage}
           setSelectedPage={setSelectedPage}
         />
+         <div></div>
       </div>
       <div>
         <p><a>Impressum</a></p>
