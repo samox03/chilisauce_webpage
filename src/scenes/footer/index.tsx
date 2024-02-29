@@ -33,13 +33,13 @@ const Footer = ({ selectedPage, setSelectedPage }: Props) => {
           page="Wer steckt dahinter"
           selectedPage={selectedPage}
           setSelectedPage={setSelectedPage}
-          />
+        />
         <Link
           page="Wo gibts mich"
           selectedPage={selectedPage}
           setSelectedPage={setSelectedPage}
         />
-         <div></div>
+        <div></div>
       </div>
       <div>
         <p><a>Impressum</a></p>

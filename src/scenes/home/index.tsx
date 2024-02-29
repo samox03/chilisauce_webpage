@@ -28,7 +28,7 @@ const Home = ({ setSelectedPage }: Props) => {
 
 
     return (
-        <section id="home" className=" gap-y-16 bg-gray-20 md:h-full md:pb-0 md:mt-40 ">
+        <section id="home" className=" gap-y-16 bg-gray-20 pt-5 md:h-full md:pb-0 md:mt-40 ">
             {/* IMAGE AND MAIN HEADER */}
             <motion.div
                 // className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
@@ -38,7 +38,7 @@ const Home = ({ setSelectedPage }: Props) => {
             >
                 {/* TODO: Eventuell md:h-5/6 wieder rausnehmen */}
                 <div className="md:flex-col items-center justify-center w-full  bg-gray-20">
-                {/* <div className="md:flex-col mx-auto w-11/12 items-center justify-center"> */}
+                    {/* <div className="md:flex-col mx-auto w-11/12 items-center justify-center"> */}
                     {/* MAIN HEADER */}
 
                     <motion.div
@@ -52,9 +52,9 @@ const Home = ({ setSelectedPage }: Props) => {
                             visible: { opacity: 1, x: 0 },
                         }}
                     >
-                        <div className="z-10 mt-28">
+                        <div className="z-10 mt-28 md:mt-2">
                             {/* HEADINGS */}
-                            <div className="md:flex mx-auto w-11/12 items-center justify-center space-x- md:pt-28">
+                            <div className="md:flex mx-auto w-11/12 items-center justify-center space-x- md:pt-19 md:mt-8">
 
                                 {/* Speechbubbles */}
                                 {/* This element is hidden on small screens. */}
@@ -74,7 +74,7 @@ const Home = ({ setSelectedPage }: Props) => {
                                 {/* This element is hidden on small screens. */}
                                 <div className="hidden md:flex flex-col mx-auto items-center justify-center space-y-8">
 
-                                    <img className="py-6" alt="Bubble-hNeukoelln" src={Bubble_NK} />
+                                    <img className="py-6" alt="Bubble-Neukoelln" src={Bubble_NK} />
 
                                     <img className="py-5" alt="Bubble_vegan" src={Bubble_vegan} />
                                 </div>
@@ -83,43 +83,41 @@ const Home = ({ setSelectedPage }: Props) => {
 
                         </div>
                     </motion.div>
-                    
-                    
-                    <img alt="backgroundElement" src={cut_redWave} className="-mt-28 w-full"/>
-                   
-                    <div className=" bg-gray-500">
-                        <div className="flex-col gap-y-22">
-                            {/* <div className="bg-red-wave bg-cover h-[600px] bg-center -z-50 -mt-20"></div> */}
-                            <motion.div
-                                className=" flex-col text-center gap-8"
-                                initial="hidden"
-                                whileInView="visible"
-                                viewport={{ once: true, amount: 0.5 }}
-                                transition={{ delay: 0.2, duration: 0.5 }}
-                                variants={{
-                                    hidden: { opacity: 0, x: -50 },
-                                    visible: { opacity: 1, x: 0 },
-                                }}
-                            >
-                                <div className="pt-8">
-                                    <div>
-                                        <p className="text-xl p-8 md:text-3xl text-white">
-                                            Was ist Paya Chili Sauce
-                                        </p>
+
+
+                    {/* <img alt="backgroundElement" src={cut_redWave} className="-mt-28 w-full"/> */}
+                    <div className="footer-background">
+                        <div className="">
+                            <div className="flex-col gap-y-22">
+                                {/* <div className="bg-red-wave bg-cover h-[600px] bg-center -z-50 -mt-20"></div> */}
+                                <motion.div
+                                    className=" flex-col text-center gap-8"
+                                    initial="hidden"
+                                    whileInView="visible"
+                                    viewport={{ once: true, amount: 0.5 }}
+                                    transition={{ delay: 0.2, duration: 0.5 }}
+                                    variants={{
+                                        hidden: { opacity: 0, x: -50 },
+                                        visible: { opacity: 1, x: 0 },
+                                    }}
+                                >
+                                    <div className="pt-8">
+                                        <div>
+                                            <p className="text-xl p-8 md:text-3xl text-white">
+                                                Was ist Paya Chili Sauce
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p className="text-base md:text-lg font-sans text-white">
+                                                Ich bin vermutlich die fruchtigste & <br /> leckerste Chili Sauce der Welt. Ehrlich.
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <p className="text-base md:text-lg font-sans text-white">
-                                            Ich bin vermutlich die fruchtigste & <br /> leckerste Chili Sauce der Welt. Ehrlich.
-                                        </p>
-                                    </div>
-                                </div>
-                            </motion.div>
-                            <div className="p-8">
-                                <p className="text-base md:text-lg font-sans text-center text-white">
-                                    Mich gibt es in <strong>drei Sorten: </strong>
-                                </p>
+                                </motion.div>
                             </div>
                         </div>
+
+                   
                     </div>
                 </div>
             </motion.div>
